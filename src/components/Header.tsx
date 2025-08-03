@@ -33,9 +33,10 @@ const Header = () => {
           </ul>
         </nav>
       </div>
-      <div className="theme-switcher-container">
+      <div  className="theme-switcher-container">
         <select
           onChange={handleThemeChange}
+          style={{marginRight:'30px'}}
           value={theme.name === "Minimalist Light" ? "theme1" : theme.name === "Dark Sidebar" ? "theme2" : "theme3"}
           className="theme-switcher"
         >
